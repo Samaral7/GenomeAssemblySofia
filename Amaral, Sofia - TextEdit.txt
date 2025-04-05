@@ -1,3 +1,4 @@
+
 # Download files Sofia_1.fastq.gz and Sofia_2.fastq.gz
 
 # Activate the enviorment
@@ -26,6 +27,11 @@ Blast result Pseudomonas aeruginosa strain NY11254 chromosome, complete genome
 # Protein anotation with RAST. Domain Bacteria, Genus Psuedomonas, Sp aeruginosa, Genetic Code 11, RAST annotation is RASTtk
 
 # Prokka version 1.14.6+galaxy1 for protein anotation
+Blast result Pseudomonas aeruginosa strain NY11254 chromosome, complete genome. 
+
+# Protein anotation with RAST. Domain Bacteria, Genus Psuedomonas, Sp aeruginosa, Genetic Code 11, RAST annotation is RASTtk
+
+# Prokka version 1.14.6+galaxy1 for protein anotaiton
 
 # Create a file called neighbors.txt using the command line
 pico neighbors.txt
