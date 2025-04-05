@@ -1,0 +1,17 @@
+set -e
+true
+true
+/Users/sofia/miniconda3/envs/genomeanalysis/bin/spades-hammer /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/corrected/configs/config.info
+/Users/sofia/miniconda3/envs/genomeanalysis/bin/python3 /Users/sofia/miniconda3/envs/genomeanalysis/share/spades/spades_pipeline/scripts/compress_all.py --input_file /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/corrected/corrected.yaml --ext_python_modules_home /Users/sofia/miniconda3/envs/genomeanalysis/share/spades --max_threads 16 --output_dir /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/corrected --gzip_output
+true
+true
+/Users/sofia/miniconda3/envs/genomeanalysis/bin/spades-core /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K21/configs/config.info
+/Users/sofia/miniconda3/envs/genomeanalysis/bin/spades-core /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K33/configs/config.info
+/Users/sofia/miniconda3/envs/genomeanalysis/bin/spades-core /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K55/configs/config.info
+/Users/sofia/miniconda3/envs/genomeanalysis/bin/spades-core /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K77/configs/config.info
+/Users/sofia/miniconda3/envs/genomeanalysis/bin/spades-core /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K99/configs/config.info
+/Users/sofia/miniconda3/envs/genomeanalysis/bin/spades-core /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K127/configs/config.info
+/Users/sofia/miniconda3/envs/genomeanalysis/bin/python3 /Users/sofia/miniconda3/envs/genomeanalysis/share/spades/spades_pipeline/scripts/copy_files.py /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K127/before_rr.fasta /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/before_rr.fasta /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K127/assembly_graph_after_simplification.gfa /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/assembly_graph_after_simplification.gfa /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K127/final_contigs.fasta /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/contigs.fasta /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K127/first_pe_contigs.fasta /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/first_pe_contigs.fasta /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K127/strain_graph.gfa /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/strain_graph.gfa /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K127/scaffolds.fasta /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/scaffolds.fasta /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K127/scaffolds.paths /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/scaffolds.paths /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K127/assembly_graph_with_scaffolds.gfa /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/assembly_graph_with_scaffolds.gfa /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K127/assembly_graph.fastg /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/assembly_graph.fastg /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/K127/final_contigs.paths /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/contigs.paths
+true
+/Users/sofia/miniconda3/envs/genomeanalysis/bin/python3 /Users/sofia/miniconda3/envs/genomeanalysis/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py --result_scaffolds_filename /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/scaffolds.fasta --misc_dir /Users/sofia/Desktop/GenomeAssemblySofia/spadesout/misc --threshold_for_breaking_scaffolds 3
+true

@@ -1,0 +1,2 @@
+spadesout/scaffolds.fasta	neighbors/putida.fasta	80.1073	929	2232
+spadesout/scaffolds.fasta	neighbors/fluorescens.fasta	79.0063	815	2232
